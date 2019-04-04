@@ -20,6 +20,11 @@ public class Estudiante {
     public void setCarrera(Carrera carrera) {
         this.carrera = carrera;
     }
+
+    @Override
+    public String toString() {
+        return "Estudiante{" + "carrera=" + carrera + '}';
+    }
     
     
     

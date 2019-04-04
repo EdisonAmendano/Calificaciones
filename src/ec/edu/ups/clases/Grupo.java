@@ -38,6 +38,11 @@ public class Grupo {
     public void setCupo(int cupo) {
         this.cupo = cupo;
     }
+
+    @Override
+    public String toString() {
+        return "Grupo{" + "codigo=" + codigo + ", nombre=" + nombre + ", cupo=" + cupo + '}';
+    }
     
     
     

@@ -65,6 +65,11 @@ public class HistorialCalificaciones {
     public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
     }
+
+    @Override
+    public String toString() {
+        return "HistorialCalificaciones{" + "aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + ", materia=" + materia + ", estudiante=" + estudiante + '}';
+    }
     
     
     

@@ -54,5 +54,12 @@ public class Sede {
     public void agregarCarrera(Carrera carrera){
         carreras.add(carrera);
     }
+
+    @Override
+    public String toString() {
+        return "Sede{" + "codigo=" + codigo + ", nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + ", carreras=" + carreras + '}';
+    }
+    
+    
     
 }

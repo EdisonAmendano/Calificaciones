@@ -63,5 +63,12 @@ public class Carrera {
     public void agregrarMateria(Materia materia){
         materias.add(materia);
     }
+
+    @Override
+    public String toString() {
+        return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre + ", materias=" + materias + ", numerosSemestres=" + numerosSemestres + ", numeroEstudiantes=" + numeroEstudiantes + ", titulo=" + titulo + '}';
+    }
+    
+    
          
 }
