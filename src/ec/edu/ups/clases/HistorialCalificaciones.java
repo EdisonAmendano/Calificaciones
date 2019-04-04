@@ -11,4 +11,11 @@ package ec.edu.ups.clases;
  */
 public class HistorialCalificaciones {
     
+    private int aprovechamiento1;
+    private int examen1;
+    private int aprovechamiento2;
+    private int examen2;
+    private Materia materia;
+    private Estudiante estudiante;
+    
 }

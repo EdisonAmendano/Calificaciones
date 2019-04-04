@@ -11,4 +11,6 @@ package ec.edu.ups.clases;
  */
 public class Estudiante {
     
+    private Carrera carrera;
+    
 }
