@@ -19,6 +19,18 @@ public class Materia {
     private Grupo grupo;
     private Profesor profesor;
 
+    public Materia(int codigo, String nombre, int numeroCreditos, int numeroHoras, int nivel, Profesor profesor, Grupo grupo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numeroCreditos = numeroCreditos;
+        this.numeroHoras = numeroHoras;
+        this.nivel = nivel;
+        this.profesor =profesor;
+        this.grupo = grupo;
+    }
+    
+    
+
     public int getCodigo() {
         return codigo;
     }
@@ -77,7 +89,8 @@ public class Materia {
 
     @Override
     public String toString() {
-        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", numeroCreditos=" + numeroCreditos + ", numeroHoras=" + numeroHoras + ", nivel=" + nivel + ", grupo=" + grupo + ", profesor=" + profesor + '}';
+        return "\n    Materia: " + "\n     Codigo:" + codigo + "\n     Nombre: " + nombre + "\n     Numero de creditos: " + numeroCreditos 
+                + "\n     Numero de horas: " + numeroHoras + "\n     Nivel: " + nivel + "\n     Grupo: " + grupo + "\n     Profesor: " + profesor;
     }
     
     

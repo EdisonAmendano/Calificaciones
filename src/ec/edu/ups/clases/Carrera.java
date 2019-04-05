@@ -5,6 +5,7 @@
  */
 package ec.edu.ups.clases;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +21,16 @@ public class Carrera {
     private int numerosSemestres;
     private int numeroEstudiantes;
     private String titulo;
+
+    public Carrera(int codigo, String nombre, int numerosSemestres, int numeroEstudiantes, String titulo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numerosSemestres = numerosSemestres;
+        this.numeroEstudiantes = numeroEstudiantes;
+        this.titulo = titulo;
+        materias = new ArrayList<>();
+    }
+    
     
     public Carrera(){
         materias = new ArrayList<>();
@@ -71,7 +82,8 @@ public class Carrera {
 
     @Override
     public String toString() {
-        return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre + ", materias=" + materias + ", numerosSemestres=" + numerosSemestres + ", numeroEstudiantes=" + numeroEstudiantes + ", titulo=" + titulo + '}';
+        return "\n  Carrera:" + "\n   Codigo: " + codigo + "\n   Nombre: " + nombre + "\n   Materias: " + materias + "\n   Numeros de semestres: " + numerosSemestres 
+                + "\n   Numero de estudiantes: " + numeroEstudiantes + "\n   Titulo: " + titulo;
     }
     
     

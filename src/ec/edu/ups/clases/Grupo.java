@@ -15,6 +15,13 @@ public class Grupo {
     private String nombre;
     private int cupo;
 
+    public Grupo(int codigo, String nombre, int cupo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cupo = cupo;
+    }
+    
+
     public int getCodigo() {
         return codigo;
     }
@@ -41,7 +48,7 @@ public class Grupo {
 
     @Override
     public String toString() {
-        return "Grupo{" + "codigo=" + codigo + ", nombre=" + nombre + ", cupo=" + cupo + '}';
+        return "\n     Grupo:" + "\n       Codigo: " + codigo + "\n       Nombre: " + nombre + "\n       Cupo: " + cupo ;
     }
     
     
