@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class Estudiante {
+public class Estudiante  extends Persona{
     
     private Carrera carrera;
 
