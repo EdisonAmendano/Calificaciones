@@ -5,6 +5,7 @@
  */
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,6 +20,10 @@ public class Carrera {
     private int numerosSemestres;
     private int numeroEstudiantes;
     private String titulo;
+    
+    public Carrera(){
+        materias = new ArrayList<>();
+    }
 
     public int getCodigo() {
         return codigo;

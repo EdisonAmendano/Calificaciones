@@ -5,6 +5,7 @@
  */
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,6 +19,10 @@ public class Sede {
     private String direccion;
     private String telefono;
     private List<Carrera> carreras;
+    
+    public Sede(){
+        carreras = new ArrayList<>();
+    }
 
     public int getCodigo() {
         return codigo;
