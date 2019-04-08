@@ -15,14 +15,14 @@ public class HistorialCalificacionesEstudiante {
     private int examen1;
     private int aprovechamiento2;
     private int examen2;
-    private String materia;
+    private Materia materia;
 
-    public HistorialCalificacionesEstudiante(int aprovechamiento1, int examen1, int aprovechamiento2, int examen2, String materia) {
+    public HistorialCalificacionesEstudiante(int aprovechamiento1, int examen1, int aprovechamiento2, int examen2) {
         this.aprovechamiento1 = aprovechamiento1;
         this.examen1 = examen1;
         this.aprovechamiento2 = aprovechamiento2;
         this.examen2 = examen2;
-        this.materia = materia;
+      
     }
     
 
@@ -58,11 +58,11 @@ public class HistorialCalificacionesEstudiante {
         this.examen2 = examen2;
     }
 
-    public String getMateria() {
+    public Materia getMateria() {
         return materia;
     }
 
-    public void setMateria(String materia) {
+    public void setMateria(Materia materia) {
         this.materia = materia;
     }
 

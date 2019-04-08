@@ -19,14 +19,12 @@ public class Materia {
     private Grupo grupo;
     private Profesor profesor;
 
-    public Materia(int codigo, String nombre, int numeroCreditos, int numeroHoras, int nivel, Profesor profesor, Grupo grupo) {
+    public Materia(int codigo, String nombre, int numeroCreditos, int numeroHoras, int nivel) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.numeroCreditos = numeroCreditos;
         this.numeroHoras = numeroHoras;
-        this.nivel = nivel;
-        this.profesor =profesor;
-        this.grupo = grupo;
+        this.nivel = nivel;    
     }
     
     

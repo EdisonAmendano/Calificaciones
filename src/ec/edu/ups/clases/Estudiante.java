@@ -14,22 +14,22 @@ import java.util.List;
  */
 public class Estudiante  extends Persona{
     
-    private String carrera;
+    private Carrera carrera;
     private List<HistorialCalificacionesEstudiante>calificaciones;
     
     
     
-    public Estudiante(String carrera, int codigo, String nombre, String cedula, String telefono, String direccion) {
+    public Estudiante( int codigo, String nombre, String cedula, String telefono, String direccion) {
         super(codigo, nombre, cedula, telefono, direccion);
-        this.carrera = carrera;
+        
         calificaciones = new ArrayList<>();
     }
 
-    public String getCarrera() {
+    public Carrera getCarrera() {
         return carrera;
     }
 
-    public void setCarrera(String carrera) {
+    public void setCarrera(Carrera carrera) {
         this.carrera = carrera;
     }
     
